@@ -1,0 +1,82 @@
+
+  -----------------------------------------------------------------------------
+  Report Summary
+  -----------------------------------------------------------------------------
+  Product Info
+    Name    : VC Static Master Shell
+    Version : T-2022.06 -- May 30, 2022
+
+  Report Info
+    Created : Mar 20, 2025  20:10:55
+
+    TopLevelModule: msrv32_imm_generator
+
+  -----------------------------------------------------------------------------
+  Management Summary
+  -----------------------------------------------------------------------------
+  Stage             Family      Fatals    Errors  Warnings     Infos
+  -----             --------  --------  --------  --------  --------
+  LANGUAGE_CHECK    CODING           0         0         0         1
+  STRUCTURAL_CHECK  CODING           0         0         0         3
+  -----             --------  --------  --------  --------  --------
+  Total                              0         0         0         4
+
+
+  -----------------------------------------------------------------------------
+  Tree Summary
+  -----------------------------------------------------------------------------
+  Severity  Stage             Tag                  Count
+  --------  -----             -------------------  -----
+  info      LANGUAGE_CHECK    ReportPortInfo-ML        1
+  info      STRUCTURAL_CHECK  RegInputOutput-ML        3
+  --------  -----             -------------------  -----
+  Total                                                4
+
+
+
+  -----------------------------------------------------------------------------
+  RegInputOutput-ML  (3 infos/0 waived)
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:2
+  Goal                : lint_rtl
+  FileName            : ../lib/../rtl/msrv32_imm_generator.v
+  LineNumber          : 4
+  Statement           : module msrv32_imm_generator(input [31:7] instr_in,input [2:0] imm_type_in,output reg [31:0] imm_out); 
+  Signal              : imm_type_in[2:0]
+  Module              : msrv32_imm_generator
+  DesignObjHierarchy  : msrv32_imm_generator
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:1
+  Goal                : lint_rtl
+  FileName            : ../lib/../rtl/msrv32_imm_generator.v
+  LineNumber          : 4
+  Statement           : module msrv32_imm_generator(input [31:7] instr_in,input [2:0] imm_type_in,output reg [31:0] imm_out); 
+  Signal              : instr_in[31:7]
+  Module              : msrv32_imm_generator
+  DesignObjHierarchy  : msrv32_imm_generator
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:3
+  Goal                : lint_rtl
+  FileName            : ../lib/../rtl/msrv32_imm_generator.v
+  LineNumber          : 4
+  Statement           : module msrv32_imm_generator(input [31:7] instr_in,input [2:0] imm_type_in,output reg [31:0] imm_out); 
+  Signal              : imm_out[31:0]
+  Module              : msrv32_imm_generator
+  DesignObjHierarchy  : msrv32_imm_generator
+
+  -----------------------------------------------------------------------------
+  ReportPortInfo-ML  (1 info/0 waived)
+  -----------------------------------------------------------------------------
+  Tag           : ReportPortInfo-ML
+  Description   : Port Information for top design unit has been generated. For details see report ReportPortInfo.rpt
+  Violation     : Lint:4
+  Goal          : lint_rtl
+  FileName      : /home1/B110/PogiRiArjun/Risc_v_Project/sim/vcst_rtdb/spyglass/vc_lint0/msrv32_imm_generator/VC_GOAL0/spyglass_reports/morelint/ReportPortInfo
+  LineNumber    : 1
+  Statement     : #     Comment          : Report Top Level Module Port Info

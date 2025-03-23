@@ -1,0 +1,183 @@
+
+  -----------------------------------------------------------------------------
+  Report Summary
+  -----------------------------------------------------------------------------
+  Product Info
+    Name    : VC Static Master Shell
+    Version : T-2022.06 -- May 30, 2022
+
+  Report Info
+    Created : Mar 20, 2025  20:17:09
+
+    TopLevelModule: msrv_pc_mux
+
+  -----------------------------------------------------------------------------
+  Management Summary
+  -----------------------------------------------------------------------------
+  Stage             Family      Fatals    Errors  Warnings     Infos    Waived
+  -----             --------  --------  --------  --------  --------  --------
+  LANGUAGE_CHECK    CODING           0         0         0         1         0
+  STRUCTURAL_CHECK  CODING           0         0         0        12         2
+  -----             --------  --------  --------  --------  --------  --------
+  Total                              0         0         0        13         2
+
+
+  -----------------------------------------------------------------------------
+  Tree Summary
+  -----------------------------------------------------------------------------
+  Severity  Stage             Tag                  Count      Waived
+  --------  -----             -------------------  -----  ----------
+  warning   STRUCTURAL_CHECK  CombLoop                 0           1
+  info      LANGUAGE_CHECK    ReportPortInfo-ML        1           0
+  info      STRUCTURAL_CHECK  CombLoop                 0           1
+  info      STRUCTURAL_CHECK  RegInputOutput-ML       12           0
+  --------  -----             -------------------  -----  ----------
+  Total                                               13           2
+
+
+
+  -----------------------------------------------------------------------------
+  RegInputOutput-ML  (12 infos/0 waived)
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:5
+  Goal                : lint_rtl
+  FileName            : ../lib/../rtl/msrv32_pc_mux.v
+  LineNumber          : 26
+  Statement           : 	output reg [31:0]pc_mux_out;
+  Signal              : pc_mux_out[31:0]
+  Module              : msrv_pc_mux
+  DesignObjHierarchy  : msrv_pc_mux
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:2
+  Goal                : lint_rtl
+  FileName            : ../lib/../rtl/msrv32_pc_mux.v
+  LineNumber          : 20
+  Statement           : 	input branch_taken_in;
+  Signal              : branch_taken_in
+  Module              : msrv_pc_mux
+  DesignObjHierarchy  : msrv_pc_mux
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:7
+  Goal                : lint_rtl
+  FileName            : ../lib/../rtl/msrv32_pc_mux.v
+  LineNumber          : 17
+  Statement           : 	input [1:0]pc_src_in;
+  Signal              : pc_src_in[1:0]
+  Module              : msrv_pc_mux
+  DesignObjHierarchy  : msrv_pc_mux
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:6
+  Goal                : lint_rtl
+  FileName            : ../lib/../rtl/msrv32_pc_mux.v
+  LineNumber          : 24
+  Statement           : 	output reg [31:0]iaddr_out,pc_plus_4_out;
+  Signal              : iaddr_out[31:0]
+  Module              : msrv_pc_mux
+  DesignObjHierarchy  : msrv_pc_mux
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:9
+  Goal                : lint_rtl
+  FileName            : ../lib/../rtl/msrv32_pc_mux.v
+  LineNumber          : 18
+  Statement           : 	input [31:0]epc_in;
+  Signal              : epc_in[31:0]
+  Module              : msrv_pc_mux
+  DesignObjHierarchy  : msrv_pc_mux
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:1
+  Goal                : lint_rtl
+  FileName            : ../lib/../rtl/msrv32_pc_mux.v
+  LineNumber          : 16
+  Statement           : 	input rst_in;
+  Signal              : rst_in
+  Module              : msrv_pc_mux
+  DesignObjHierarchy  : msrv_pc_mux
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:3
+  Goal                : lint_rtl
+  FileName            : ../lib/../rtl/msrv32_pc_mux.v
+  LineNumber          : 22
+  Statement           : 	input ahb_ready_in;
+  Signal              : ahb_ready_in
+  Module              : msrv_pc_mux
+  DesignObjHierarchy  : msrv_pc_mux
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:4
+  Goal                : lint_rtl
+  FileName            : ../lib/../rtl/msrv32_pc_mux.v
+  LineNumber          : 25
+  Statement           : 	output reg misaligned_instr_logic_out;
+  Signal              : misaligned_instr_logic_out
+  Module              : msrv_pc_mux
+  DesignObjHierarchy  : msrv_pc_mux
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:12
+  Goal                : lint_rtl
+  FileName            : ../lib/../rtl/msrv32_pc_mux.v
+  LineNumber          : 21
+  Statement           : 	input [30:0]iaddr_in;
+  Signal              : iaddr_in[30:0]
+  Module              : msrv_pc_mux
+  DesignObjHierarchy  : msrv_pc_mux
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:10
+  Goal                : lint_rtl
+  FileName            : ../lib/../rtl/msrv32_pc_mux.v
+  LineNumber          : 19
+  Statement           : 	input [31:0]trap_address_in;
+  Signal              : trap_address_in[31:0]
+  Module              : msrv_pc_mux
+  DesignObjHierarchy  : msrv_pc_mux
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:11
+  Goal                : lint_rtl
+  FileName            : ../lib/../rtl/msrv32_pc_mux.v
+  LineNumber          : 23
+  Statement           : 	input [31:0]pc_in;
+  Signal              : pc_in[31:0]
+  Module              : msrv_pc_mux
+  DesignObjHierarchy  : msrv_pc_mux
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:8
+  Goal                : lint_rtl
+  FileName            : ../lib/../rtl/msrv32_pc_mux.v
+  LineNumber          : 24
+  Statement           : 	output reg [31:0]iaddr_out,pc_plus_4_out;
+  Signal              : pc_plus_4_out[31:0]
+  Module              : msrv_pc_mux
+  DesignObjHierarchy  : msrv_pc_mux
+
+  -----------------------------------------------------------------------------
+  ReportPortInfo-ML  (1 info/0 waived)
+  -----------------------------------------------------------------------------
+  Tag           : ReportPortInfo-ML
+  Description   : Port Information for top design unit has been generated. For details see report ReportPortInfo.rpt
+  Violation     : Lint:15
+  Goal          : lint_rtl
+  FileName      : /home1/B110/PogiRiArjun/Risc_v_Project/sim/vcst_rtdb/spyglass/vc_lint0/msrv_pc_mux/VC_GOAL0/spyglass_reports/morelint/ReportPortInfo
+  LineNumber    : 1
+  Statement     : #     Comment          : Report Top Level Module Port Info
